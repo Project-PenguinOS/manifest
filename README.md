@@ -46,7 +46,7 @@ Initialize the manifest repository:
 > Configure your real name and email address in Git before you initialize Repo if you plan to submit patches.
 
 ```bash
-repo init -u https://github.com/Project-PenguinOS/manifest -b celerity
+repo init -u https://github.com/Project-PenguinOS/manifest -b celerity --git-lfs
 ```
 
 ### Download the source tree
