@@ -55,7 +55,10 @@
   <remove-project name="AOSPA/android_packages_apps_Launcher3" />
   <project path="packages/apps/Launcher3" name="Project-PenguinOS/packages_apps_Launcher3" remote="penguin" revision="celerity" />
   <project path="packages/apps/ParanoidSense" name="Project-PenguinOS/packages_apps_ParanoidSense" remote="penguin" revision="celerity" />
+  <project path="packages/apps/PenguinDex" name="Project-PenguinOS/penguin_packages_apps_PenguinDex" remote="penguin" revision="celerity" />
+  <project path="packages/apps/PenguinLaboratory" name="Project-PenguinOS/penguin_packages_apps_PenguinLaboratory" remote="penguin" revision="celerity" />
   <project path="packages/apps/PenguinSetupWizard" name="Project-PenguinOS/packages_apps_PenguinSetupWizard" remote="penguin" revision="celerity" />
+  <project path="packages/apps/PenguinSystemUI" name="Project-PenguinOS/penguin_packages_apps_PenguinSystemUI" remote="penguin" revision="celerity" />
   <remove-project name="AOSPA/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="Project-PenguinOS/packages_apps_Settings" remote="penguin" revision="celerity" />
   <remove-project name="AOSPA/android_packages_apps_ThemePicker" />
