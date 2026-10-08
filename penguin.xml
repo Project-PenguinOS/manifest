@@ -6,6 +6,15 @@
   <project path="bionic" name="Project-PenguinOS/bionic" remote="penguin" revision="celerity" />
 
   <!-- Build -->
+  <remove-project name="AOSPA/android_build" />
+  <project path="build/make" name="Project-PenguinOS/build_make" remote="penguin" revision="celerity">
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <remove-project name="platform/build/release" />
   <project path="build/release" name="Project-PenguinOS/android_build_release" remote="penguin" revision="celerity" />
   <remove-project name="AOSPA/android_build_soong" />
@@ -65,6 +74,8 @@
   <!-- System -->
   <remove-project name="AOSPA/android_system_core" />
   <project path="system/core" name="Project-PenguinOS/system_core" remote="penguin" revision="celerity" />
+  <remove-project name="AOSPA/android_system_fs_fs_mgr" />
+  <project path="system/fs/fs_mgr" name="Project-PenguinOS/system_fs_fs_mgr" remote="penguin" revision="celerity" />
   <remove-project name="AOSPA/android_system_media" />
   <project path="system/media" name="Project-PenguinOS/system_media" remote="penguin" revision="celerity" />
   <remove-project name="platform/system/memory/libmeminfo" />
@@ -90,5 +101,23 @@
   <project path="vendor/gms" name="PenguinOS/android_vendor_gms" remote="codeberg" revision="celerity" clone-depth="1" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
   <project path="vendor/qcom/opensource/core-utils-vendor" name="Project-PenguinOS/android_vendor_qcom_opensource_core-utils-vendor" remote="penguin" revision="celerity" />
+
+
+  <remove-project name="platform/art" />
+  <project path="art" name="Project-PenguinOS/art" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk,trunk-fs-release,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="Project-PenguinOS/external_wpa_supplicant_8" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk,trunk-fs-release,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <project path="hardware/nxp/nfc" name="Project-PenguinOS/hardware_nxp_nfc" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk,trunk-fs-release,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" />
+  <remove-project name="platform/packages/modules/Nfc" />
+  <project path="packages/modules/Nfc" name="Project-PenguinOS/packages_modules_Nfc" remote="penguin" revision="celerity" groups="25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk-cw-fs,pdk-fs,trunk-fs-release,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L0,vsdk_exc_L3,vsdk_exc_L4,vsdk_exc_L5" />
+  <remove-project name="platform/packages/modules/Telephony" />
+  <project path="packages/modules/Telephony" name="Project-PenguinOS/packages_modules_Telephony" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk-cw-fs,pdk-fs,trunk-fs-release,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L0,vsdk_exc_L3,vsdk_exc_L4,vsdk_exc_L5" />
+  <remove-project name="platform/packages/modules/Uwb" />
+  <project path="packages/modules/Uwb" name="Project-PenguinOS/packages_modules_Uwb" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk-cw-fs,pdk-fs,trunk-fs-release,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L0,vsdk_exc_L3" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="Project-PenguinOS/packages_providers_MediaProvider" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk-cw-fs,pdk-fs,trunk-fs-release,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="Project-PenguinOS/packages_providers_TelephonyProvider" remote="penguin" revision="celerity" groups="24Q3-fs-release,25Q2-fs-release,25Q4-fs-release,26Q2-fs-release,pdk-cw-fs,pdk-fs,trunk-fs-release,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" />
 
 </manifest>
