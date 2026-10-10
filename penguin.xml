@@ -102,6 +102,10 @@
   <project path="vendor/custom-preference" name="Project-PenguinOS/vendor_custom-preference" remote="penguin" revision="celerity" />
   <remove-project name="android_vendor_google_gms" />
   <project path="vendor/gms" name="PenguinOS/android_vendor_gms" remote="codeberg" revision="celerity" clone-depth="1" />
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="Project-PenguinOS/vendor_qcom_opensource_commonsys-intf_display" remote="penguin" revision="celerity" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_bluetooth-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth" name="Project-PenguinOS/vendor_qcom_opensource_commonsys_bluetooth" remote="penguin" revision="celerity" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
   <project path="vendor/qcom/opensource/core-utils-vendor" name="Project-PenguinOS/android_vendor_qcom_opensource_core-utils-vendor" remote="penguin" revision="celerity" />
 
