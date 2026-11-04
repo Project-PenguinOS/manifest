@@ -112,6 +112,7 @@
   <project path="vendor/qcom/opensource/commonsys/bluetooth" name="Project-PenguinOS/vendor_qcom_opensource_commonsys_bluetooth" remote="penguin" revision="celerity" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
   <project path="vendor/qcom/opensource/core-utils-vendor" name="Project-PenguinOS/android_vendor_qcom_opensource_core-utils-vendor" remote="penguin" revision="celerity" />
+  <project path="vendor/qcom/opensource/libvmmem" name="Project-PenguinOS/android_vendor_qcom_opensource_libvmmem" remote="penguin" revision="celerity" />
   <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
   <project path="vendor/qcom/opensource/power" name="Project-PenguinOS/vendor_qcom_opensource_power" remote="penguin" revision="celerity" />
 
